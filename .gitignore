@@ -1,0 +1,93 @@
+# ============================================
+# ArgusAI - Safe Route Intelligence System
+# ============================================
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+backend/__pycache__/
+backend/utils/__pycache__/
+
+# Environment variables — never commit secrets
+.env
+.env.local
+.env.*.local
+backend/.env
+frontend/.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.sublime-*
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+backend/test_output.txt
+
+# Build output
+frontend/build/
+backend/build/
+
+# Model weights (large binaries — store in cloud storage or Git LFS)
+*.pt
+*.pth
+*.h5
+*.pkl
+*.joblib
+
+# Large data files (use Git LFS or cloud storage)
+cache/
+data/merged/test/
+data/merged/train/
+data/merged/valid/
+data/raw_downloads/
+runs/
+*.db
+*.sqlite
+*.sqlite3
+
+# Graph files (large - keep only essential ones)
+# Uncomment to exclude all graph files:
+*.graphml
+*.json
+
+# Training artifacts
+training_data.csv
+model_features.json
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Duplicate/backup folders
+Frontend_Add/
+files/
+
+# Test outputs
+test_output.txt
